@@ -13,7 +13,7 @@
   }
 
   header {
-    height: 150px;
+    height: 250px;
     background-color: black;
     color: white;
     font-family: 'Passion One', cursive;
@@ -55,21 +55,35 @@
     font-size: 3.5vw;
   }
 
-  section.normal {
-    
-    font-size: 1em;
+  section.normal p {
+    padding-bottom:2em;
   }
 
   section.img {
     color: white;
     background-color: rgb(18, 17, 17);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-attachment: fixed;
     
   }
 
   section.img p {
     display: inline-block;
     padding: 5px;
-    background-color: rgba(0, 0, 0, 0.438);
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 1px 1px 0px black;
+  }
+
+  section#flor {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+  }
+
+  section#livro {
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
   }
 
   footer {
