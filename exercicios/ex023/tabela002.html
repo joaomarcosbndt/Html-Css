@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de tabelas grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: gray;
+            color: white;
+            text-shadow: 1px 1px 0px black;
+            border: 2px solid black;
+        }
+
+        table {
+            width: 400px;
+            border-collapse: collapse;
+            border: 2px solid black;
+        }
+
+        th {
+            background-color: #EAECF0;
+            border: 1px solid black;
+            padding: 20px 0px;
+
+        }
+
+        tr {
+            
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .numero {
+            text-align: right;
+        }
+
+        #total {
+            padding-right: 8px;
+            background-color: #EAECF0;
+        }
+
+        #habit {
+            text-align: left;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+        table
+        caption = legenda da tabela
+            thead = cabeça da tabela
+                tr
+                td
+                th
+            tbody = corpo da tabela
+                tr
+                td
+                th
+            tfoot = rodapé da tabela
+                tr
+                td
+                th
+    -->
+    <table>
+        <caption>População das unidades Federativas do Brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 120px;">População</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">44 420 459	</td>
+            </tr>
+            <tr >
+                <td>Minas Gerais</td>
+                <td class="numero">20 538 718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">16 054 524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 136 417</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11 443 208</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="numero">10 880 506</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="numero">9 058 155</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="numero">8 791 688</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="numero">8 116 132</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">7 609 601</td> 
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th id="habit" scope="row">Total de Habitantes</th>
+                <td class="numero" id="total" >210 107 108</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
