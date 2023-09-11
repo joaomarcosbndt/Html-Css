@@ -20,9 +20,16 @@
         }
 
         table {
+            height: 150vh;
             width: 400px;
             border-collapse: collapse;
             border: 2px solid black;
+            position: relative;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color:#EAECF0;
         }
 
         th {
@@ -53,6 +60,14 @@
         #habit {
             text-align: left;
             padding-left: 10px;
+        }
+
+        tbody tr:nth-child(odd)/*2n-1*/ {
+            background-color: pink;
+        }
+
+        tbody tr:nth-child(even)/*2n*/ {
+            background-color: lightgray;
         }
     </style>
 </head>
