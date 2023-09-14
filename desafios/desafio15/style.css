@@ -37,6 +37,23 @@ section#telefone {
     
 }
 
+section#redes-sociais img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #9B001A;
+    box-sizing: border-box;
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid #9b001a53;
+}
+
+section#redes-sociais {
+    text-align: right;
+}
+
 iframe#tela {
     position: relative;
     top: 50%;
