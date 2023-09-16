@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1><br>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <label for="imas"><input type="radio" name="sexo" id="imas" checked value="m">Masculino</label><br>
+            <label for="ifem"><input type="radio" name="sexo" id="ifem" value="f">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <label for="ifut"><input type="checkbox" name="fut" id="ifut" checked> Futebol<br></label>
+            <label for="ifuts"><input type="checkbox" name="futs" id="ifuts"> Futsal<br></label>
+            <label for="ifutv"><input type="checkbox" name="futv" id="ifutv"> Futvolei<br></label>
+            <label for="ivol"><input type="checkbox" name="vol" id="ivol"> Volei<br></label>
+            <label for="ibas"><input type="checkbox" name="bas" id="ibas" checked> Basquete<br></label>
+            <label for="iten"><input type="checkbox" name="ten" id="iten"> Tênis<br></label>
+            <label for="itenm"><input type="checkbox" name="tenm" id="itenm"> Tênis de mesa<br></label>
+            <label for="inat"><input type="checkbox" name="nat" id="inat" checked> Natação<br></label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
